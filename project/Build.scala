@@ -5,7 +5,7 @@ import play.Project._
 object ApplicationBuild extends Build {
 
   val appName         = "blog"
-  val appVersion      = "1.0-SNAPSHOT"
+  val appVersion      = "0.0.1" // => use semantic versioning
 
   val appDependencies = Seq(
     jdbc,
