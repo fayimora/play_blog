@@ -15,7 +15,7 @@ class IndexSpec extends FunSpec with Matchers with BeforeAndAfterAll with HtmlUn
     }
 
     it("should have the correct content") {
-      // find("p") should equal (Some("Hello Fayimora!"))
+      find("h1") should equal (Some("Hello Fayimora!"))
     }
   }
 }
