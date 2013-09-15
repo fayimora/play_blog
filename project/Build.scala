@@ -11,7 +11,9 @@ object ApplicationBuild extends Build {
     jdbc,
     "org.webjars" %% "webjars-play" % "2.1.0-3",
     "org.webjars" % "bootstrap" % "3.0.0",
+    "org.webjars" % "jquery" % "1.9.0",
     "com.typesafe.slick" % "slick_2.10" % "1.0.1",
+    "org.scalatest" % "scalatest_2.10" % "2.0.M7" % "test",
     "postgresql" % "postgresql" % "9.1-901.jdbc4"
   )
 

@@ -7,7 +7,7 @@ import views._
 object Application extends Controller {
 
   def index = Action {
-    Ok(html.hello("Hello"))
+    Ok(html.hello("Fayimora"))
   }
 
 }
