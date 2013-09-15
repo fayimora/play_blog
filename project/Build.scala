@@ -14,6 +14,7 @@ object ApplicationBuild extends Build {
     "org.webjars" % "jquery" % "1.9.0",
     "com.typesafe.slick" % "slick_2.10" % "1.0.1",
     "org.scalatest" % "scalatest_2.10" % "2.0.M7" % "test",
+    "org.seleniumhq.selenium" % "selenium-java" % "2.35.0" % "test",
     "postgresql" % "postgresql" % "9.1-901.jdbc4"
   )
 
