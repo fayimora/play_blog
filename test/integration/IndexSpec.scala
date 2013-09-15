@@ -1,12 +1,9 @@
-import org.scalatest.{FunSpec, BeforeAndAfterAll, Matchers}
+import org.scalatest.{FunSpec, BeforeAndAfterEach, Matchers}
 import org.scalatest.selenium.HtmlUnit
 
-class IndexSpec extends FunSpec with Matchers with BeforeAndAfterAll with HtmlUnit {
-  override def beforeAll {
+class IndexSpec extends FunSpec with Matchers with BeforeAndAfterEach with HtmlUnit {
+  override def beforeEach {
     go to ("http://localhost:9000/")
-  }
-  override def afterAll {
-    quit()
   }
 
   describe("Index page") {
@@ -15,7 +12,7 @@ class IndexSpec extends FunSpec with Matchers with BeforeAndAfterAll with HtmlUn
     }
 
     it("should have the correct content") {
-      find("h1") should equal (Some("Hello Fayimora!"))
+      find("hello-id").get.text should equal ("Hello Fayimora!")
     }
   }
 }
