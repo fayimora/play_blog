@@ -12,7 +12,7 @@ class IndexSpec extends FunSpec with Matchers with BeforeAndAfterEach with HtmlU
     }
 
     it("should have the correct content") {
-      find("hello-id").get.text should equal ("Hello Fayimora!")
+      tagName("h1").element.text should equal ("Hello Fayimora!")
     }
   }
 }
