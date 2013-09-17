@@ -3,7 +3,7 @@ import org.scalatest.selenium.HtmlUnit
 
 class IndexSpec extends FunSpec with Matchers with BeforeAndAfterEach with HtmlUnit {
   override def beforeEach {
-    go to ("http://localhost:9000/")
+    goTo ("http://localhost:9000/")
   }
 
   describe("Index page") {
