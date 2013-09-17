@@ -2,8 +2,10 @@ import org.scalatest.{FunSpec, BeforeAndAfterEach, Matchers}
 import org.scalatest.selenium.HtmlUnit
 
 class IndexSpec extends FunSpec with Matchers with BeforeAndAfterEach with HtmlUnit {
+  val host = "http://localhost:9000/"
+
   override def beforeEach {
-    goTo ("http://localhost:9000/")
+    goTo (host)
   }
 
   describe("Index page") {

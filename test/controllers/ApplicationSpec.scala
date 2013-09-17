@@ -7,7 +7,7 @@ class ApplicationSpec extends FunSpec with Matchers {
   describe("Application Controller") {
     it("index route should return a status code 200"){
       running(FakeApplication()) {
-        val index = route(FakeRequest(GET, Application.index.toString)).get
+        val index = route(FakeRequest(GET, Application.index.url)).get
         status(index) should be (OK)
       }
     }
